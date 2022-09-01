@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jacoobanderson/L0/issues"
   },
-  "homepage": "https://github.com/jacoobanderson/L0#readme"
+  "homepage": "https://github.com/jacoobanderson/L0#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
 }
