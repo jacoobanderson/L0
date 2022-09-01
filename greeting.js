@@ -6,6 +6,15 @@ const read = readline.createInterface({
 })
 
 read.question('What is your name?', name => {
-    console.log(name)
+    let count = 0;
+    const loader = setInterval(() => {
+        read.write(` \r${count++}%`)
+    }, 25);
+
+    setTimeout(() => {
+        clearInterval(loader);
+        read.write(` \nGreetings ${name} `)
+    }, 2625);
+
     read.close()
 })
