@@ -22,7 +22,7 @@ read.question('What is your name?', name => {
 
     setTimeout(() => {
         clearInterval(loader);
-        read.write(` \nGreetings ${name} `)
+        read.write(` \nGreetings ${name}, `)
         getAdvice()
     }, 3000);
 
